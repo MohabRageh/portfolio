@@ -1,3 +1,6 @@
+*{
+  box-sizing:border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,162 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: rgb(5, 25, 25);
+   
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #727171; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+h1{
+  color: white;
+  font-family:monospace;
+  font-size: clamp(.1rem,5vw,3rem);
+  text-shadow: 0px 0px 10px white;
+}
+.html{
+  scroll-behavior: smooth;
+}
+.Header{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  color: white;
+  text-shadow: 0px 0px 10px white;
+  font-size: clamp(.1rem,1.5vw,1.5rem);
+  border-bottom:  2px solid white;
+  box-shadow: 0 0 5px white;
+}
+.header_title{
+  grid-column: 1/3;
+  margin: 0 auto;
+  
+}
+.img_container img{
+  width: 15vw;
+  margin-left: 50px;
+  border-radius: 20%;
+}
+nav{
+  display: grid;
+  place-content: center;
+}
+nav ul{
+  border: 2px solid white;
+  width: 50vw;
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+nav li{
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: grid;
+  place-content: center;
+  padding: 1vw;
+  font-size: clamp(.1rem,1vw,1.5rem);
+}
+nav li:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+section{
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coursesContainer{
+  display: flex;
+  width: 80vw;
+  border: 2px solid white;
+  overflow:scroll;
+  padding: 50px;
+  flex-wrap: nowrap;
+  gap: 100px;
+  
+}
+.courseCard{
+  display: block;
+  background-color: silver;
+  border-radius: 20px;
+  padding: 2vw;
+  color: black;
+  width: 15vw;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+  
+}
+.courseCard h2,h3{
+  font-size: clamp(.1rem,1vw,1.5rem);
+}
+a{
+  color: white;
+  font-size: clamp(.1rem,1vw,1.5rem);
+  color: inherit;
+}
+aside{
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+aside img{
+  width: 50px;
+  border-radius: 50%;
+}
+.skill{
+  flex-shrink: 0;
+  background-color: aliceblue;
+  color: black;
+  width: 20vw;
+  font-size: 1.5rem;
+  height: 20vw;
+  display: grid;
+  place-content: center;
+}
+.skill:nth-child(1){
+  animation: 5s ease-in-out 2s 1 forwards flip;
+  transform:translateX(2000px);
+}
+.skill:nth-child(3){
+  animation: 5s ease-in-out 2s 1 forwards flip;
+  transform:translateX(2000px);
+}
+@keyframes flip {
+  0%{  }
+  33%{ transform:translateX(-1000px) rotate(720deg) ; } 
+  66%{ transform:translateX(0) rotate(-720deg) ; } 
+  100%{ transform:translateX(0); background-color: antiquewhite; }
+}
+.skill:nth-child(2){
+  animation: 5s ease-in-out 4s 1 forwards faraway;
+  transform: scale(0%)
+}
+@keyframes faraway {
+  0% { transform: scale(0%); } 
+  33%{ transform:scale(50%) } 
+  66%{ transform: scale(150%); } 
+  100%{ transform: scale(100%); }
+}
+section:last-child{
+  margin-bottom: 100px;
 }
