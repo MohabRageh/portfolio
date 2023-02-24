@@ -112,6 +112,15 @@ section{
 .courseCard h2,h3{
   font-size: clamp(.1rem,1vw,1.5rem);
 }
+.courseCard a{
+  color: rgb(35, 43, 208);
+}
+.courseCard img{
+  width: 10vw;
+  height: 10vw;
+  display: block;
+  margin: 0 auto;
+}
 a{
   color: white;
   font-size: clamp(.1rem,1vw,1.5rem);
@@ -127,7 +136,7 @@ aside{
   gap: 10px;
 }
 aside img{
-  width: 50px;
+  width: 3vw;
   border-radius: 50%;
 }
 .skill{
@@ -135,7 +144,7 @@ aside img{
   background-color: aliceblue;
   color: black;
   width: 20vw;
-  font-size: 1.5rem;
+  font-size: clamp(.5rem,3vw,1.5rem);
   height: 20vw;
   display: grid;
   place-content: center;

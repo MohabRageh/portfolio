@@ -7,7 +7,7 @@ export default function OtherCourses({Person}) {
       <section className='sectionOfCourses'>
         <h1 id='OtherCourses'>OtherCourses</h1>
         <div className='coursesContainer'>
-          {Person.courses.map(
+          {Person.otherCourses.map(
             (course)=>{
               return<CourseCard course={course} key={course.id}/>
             }

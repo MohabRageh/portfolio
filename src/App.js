@@ -21,105 +21,97 @@ function App() {
         id:1,
         title:"HTML",
         instructor:"OsamaElzero",
-        link:""
+        img:'imgs/html.png',
+        link:"https://www.youtube.com/watch?v=qfPUMV9J5yw&ab_channel=ElzeroWebSchool"
       },{
         id:2,
         title:"HTML",
         instructor:"Scrimba 'Bob Ziroll' ",
-        link:""
+        img:"imgs/html.png",
+        link:"https://www.youtube.com/watch?v=a_iQb1lnAEQ&t=7636s&ab_channel=freeCodeCamp.org"
       },{
         id:3,
         title:"CSS",
         instructor:"OsamaElzero",
-        link:""
+        img:"imgs/css.png",
+        link:"https://www.youtube.com/watch?v=qyVkLebgfzY&ab_channel=ElzeroWebSchool"
       },{
         id:12,
         title:"CSS",
         instructor:"Dave-Gray",
-        link:""
+        img:"imgs/css.png",
+        link:"https://www.youtube.com/watch?v=n4R2E7O-Ngo&t=24757s&ab_channel=DaveGray"
       },{
         id:4,
         title:"CSS",
         instructor:"Scrimba 'piear' ",
-        link:""
+        img:"imgs/css.png",
+        link:"https://www.youtube.com/watch?v=a_iQb1lnAEQ&t=7636s&ab_channel=freeCodeCamp.org"
       },{
         id:5,
         title:"JavaScript",
         instructor:"OsamaElzero",
-        link:""
+        img:"imgs/js.png",
+        link:"https://www.youtube.com/watch?v=GM6dQBmc-Xg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&ab_channel=ElzeroWebSchool"
       },{
         id:6,
         title:"JavaScript",
         instructor:"Dave-Gray",
-        link:""
+        img:"imgs/js.png",
+        link:"https://www.youtube.com/watch?v=EfAl9bwzVZk&ab_channel=DaveGray"
       },{
         id:7,
         title:"JavaScript",
         instructor:"Scrimba 'Bob Ziroll' ",
-        link:""
+        img:"imgs/js.png",
+        link:"https://www.youtube.com/watch?v=jS4aFq5-91M&t=2s&ab_channel=freeCodeCamp.org"
       },{
         id:8,
         title:"React",
         instructor:"Dave-Gray",
-        link:""
+        img:"imgs/react.png",
+        link:"https://www.youtube.com/watch?v=RVFAyFWO4go&ab_channel=DaveGray"
       },{
         id:9,
         title:"React",
         instructor:"Scrimba 'Bob Ziroll'",
-        link:""
+        img:"imgs/react.png",
+        link:"https://www.youtube.com/watch?v=bMknfKXIFA8&ab_channel=freeCodeCamp.org"
       }
     ],
     otherCourses:[
       {
         id:1,
-        title:"HTML",
-        instructor:"OsamaElzero",
-        link:""
+        title:"OOP",
+        img:"imgs/oop.jpg"
       },{
         id:2,
-        title:"HTML",
-        instructor:"Scrimba 'Bob Ziroll' ",
-        link:""
+        title:"Data Structure",
+        img:"imgs/data structure.jpg"
       },{
         id:3,
-        title:"CSS",
-        instructor:"OsamaElzero",
-        link:""
+        title:"Algorithm",
+        img:"imgs/algo.png"
       },{
         id:12,
-        title:"CSS",
-        instructor:"Dave-Gray",
-        link:""
+        title:"Fire Store",
+        img:"imgs/fire store.png"
       },{
         id:4,
-        title:"CSS",
-        instructor:"Scrimba 'piear' ",
-        link:""
+        title:"Mysql database",
+        img:"imgs/mysql.png"
       },{
         id:5,
-        title:"JavaScript",
-        instructor:"OsamaElzero",
-        link:""
+        title:"C++",
+        img:"imgs/c++.png"
       },{
         id:6,
-        title:"JavaScript",
-        instructor:"Dave-Gray",
-        link:""
+        title:"Dart + Flutter",
+        img:"imgs/DF.png"
       },{
         id:7,
-        title:"JavaScript",
-        instructor:"Scrimba 'Bob Ziroll' ",
-        link:""
-      },{
-        id:8,
-        title:"React",
-        instructor:"Dave-Gray",
-        link:""
-      },{
-        id:9,
-        title:"React",
-        instructor:"Scrimba 'Bob Ziroll'",
-        link:""
+        title:"Java",
+        img:"imgs/java.png"
       }
     ],
     Projects:[
